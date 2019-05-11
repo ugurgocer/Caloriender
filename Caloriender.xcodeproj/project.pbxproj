@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8184BD28058E7BDC5839781E /* Pods_CalorienderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799EC2A236C0E35974D901C0 /* Pods_CalorienderUITests.framework */; };
+		83BCCC0960197B5C6AB05ABA /* Pods_Caloriender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2395CE8BBE9DD6C149EB6BA /* Pods_Caloriender.framework */; };
+		A39F63EEBF569200D062DC78 /* Pods_CalorienderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA710583EA9C8927136207E /* Pods_CalorienderTests.framework */; };
+		F56CC0AF228114B90003D7CD /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CC0AE228114B90003D7CD /* Validation.swift */; };
+		F56CC0B2228118570003D7CD /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CC0B1228118570003D7CD /* UITextFieldExtensions.swift */; };
+		F56CC0B422813A1F0003D7CD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CC0B322813A1F0003D7CD /* Data.swift */; };
+		F56CC0B62281460E0003D7CD /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CC0B52281460E0003D7CD /* MealsViewController.swift */; };
+		F56CC0B822821B2C0003D7CD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CC0B722821B2C0003D7CD /* ProfileViewController.swift */; };
+		F56CC0BA228224030003D7CD /* UserUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CC0B9228224030003D7CD /* UserUpdateViewController.swift */; };
+		F5A7295D22701AAA00DAC390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A7295C22701AAA00DAC390 /* AppDelegate.swift */; };
+		F5A7296422701AAA00DAC390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A7296222701AAA00DAC390 /* Main.storyboard */; };
+		F5A7296622701AAC00DAC390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A7296522701AAC00DAC390 /* Assets.xcassets */; };
+		F5A7296922701AAC00DAC390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A7296722701AAC00DAC390 /* LaunchScreen.storyboard */; };
+		F5A7297422701AAC00DAC390 /* CalorienderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A7297322701AAC00DAC390 /* CalorienderTests.swift */; };
+		F5A7297F22701AAC00DAC390 /* CalorienderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A7297E22701AAC00DAC390 /* CalorienderUITests.swift */; };
+		F5A7298D22701B6E00DAC390 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A7298C22701B6E00DAC390 /* LoginViewController.swift */; };
+		F5A7298F22701B8000DAC390 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A7298E22701B8000DAC390 /* RegisterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5A7297022701AAC00DAC390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5A7295122701AAA00DAC390 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5A7295822701AAA00DAC390;
+			remoteInfo = Caloriender;
+		};
+		F5A7297B22701AAC00DAC390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5A7295122701AAA00DAC390 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5A7295822701AAA00DAC390;
+			remoteInfo = Caloriender;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39A41D8296C4E4A3C5E8C082 /* Pods-CalorienderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorienderUITests.release.xcconfig"; path = "Target Support Files/Pods-CalorienderUITests/Pods-CalorienderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		633E4C91FC4D434A1AAFA0D9 /* Pods-CalorienderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorienderTests.debug.xcconfig"; path = "Target Support Files/Pods-CalorienderTests/Pods-CalorienderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		662BF5E10773E1AABC3235C5 /* Pods-Caloriender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caloriender.release.xcconfig"; path = "Target Support Files/Pods-Caloriender/Pods-Caloriender.release.xcconfig"; sourceTree = "<group>"; };
+		6AA710583EA9C8927136207E /* Pods_CalorienderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorienderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		799EC2A236C0E35974D901C0 /* Pods_CalorienderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorienderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F8A764FFCC56DFB0C12827 /* Pods-CalorienderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorienderUITests.debug.xcconfig"; path = "Target Support Files/Pods-CalorienderUITests/Pods-CalorienderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEB60082386E6B2B0F6467E3 /* Pods-Caloriender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caloriender.debug.xcconfig"; path = "Target Support Files/Pods-Caloriender/Pods-Caloriender.debug.xcconfig"; sourceTree = "<group>"; };
+		E2395CE8BBE9DD6C149EB6BA /* Pods_Caloriender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caloriender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56CC0AE228114B90003D7CD /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		F56CC0B1228118570003D7CD /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
+		F56CC0B322813A1F0003D7CD /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F56CC0B52281460E0003D7CD /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
+		F56CC0B722821B2C0003D7CD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F56CC0B9228224030003D7CD /* UserUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdateViewController.swift; sourceTree = "<group>"; };
+		F5A7295922701AAA00DAC390 /* Caloriender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caloriender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A7295C22701AAA00DAC390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5A7296322701AAA00DAC390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5A7296522701AAC00DAC390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5A7296822701AAC00DAC390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5A7296A22701AAC00DAC390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A7296F22701AAC00DAC390 /* CalorienderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalorienderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A7297322701AAC00DAC390 /* CalorienderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorienderTests.swift; sourceTree = "<group>"; };
+		F5A7297522701AAC00DAC390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A7297A22701AAC00DAC390 /* CalorienderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalorienderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A7297E22701AAC00DAC390 /* CalorienderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorienderUITests.swift; sourceTree = "<group>"; };
+		F5A7298022701AAC00DAC390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A7298C22701B6E00DAC390 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F5A7298E22701B8000DAC390 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F6384147A67F2E004A98B9B5 /* Pods-CalorienderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorienderTests.release.xcconfig"; path = "Target Support Files/Pods-CalorienderTests/Pods-CalorienderTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5A7295622701AAA00DAC390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BCCC0960197B5C6AB05ABA /* Pods_Caloriender.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A7296C22701AAC00DAC390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39F63EEBF569200D062DC78 /* Pods_CalorienderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A7297722701AAC00DAC390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8184BD28058E7BDC5839781E /* Pods_CalorienderUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9220A01B049888590E8AEA8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2395CE8BBE9DD6C149EB6BA /* Pods_Caloriender.framework */,
+				6AA710583EA9C8927136207E /* Pods_CalorienderTests.framework */,
+				799EC2A236C0E35974D901C0 /* Pods_CalorienderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD960205FAFED4BC23EE0C50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEB60082386E6B2B0F6467E3 /* Pods-Caloriender.debug.xcconfig */,
+				662BF5E10773E1AABC3235C5 /* Pods-Caloriender.release.xcconfig */,
+				633E4C91FC4D434A1AAFA0D9 /* Pods-CalorienderTests.debug.xcconfig */,
+				F6384147A67F2E004A98B9B5 /* Pods-CalorienderTests.release.xcconfig */,
+				B9F8A764FFCC56DFB0C12827 /* Pods-CalorienderUITests.debug.xcconfig */,
+				39A41D8296C4E4A3C5E8C082 /* Pods-CalorienderUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F56CC0B0228117EC0003D7CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F56CC0B1228118570003D7CD /* UITextFieldExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5A7295022701AAA00DAC390 = {
+			isa = PBXGroup;
+			children = (
+				F5A7295B22701AAA00DAC390 /* Caloriender */,
+				F5A7297222701AAC00DAC390 /* CalorienderTests */,
+				F5A7297D22701AAC00DAC390 /* CalorienderUITests */,
+				F5A7295A22701AAA00DAC390 /* Products */,
+				CD960205FAFED4BC23EE0C50 /* Pods */,
+				9220A01B049888590E8AEA8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5A7295A22701AAA00DAC390 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5A7295922701AAA00DAC390 /* Caloriender.app */,
+				F5A7296F22701AAC00DAC390 /* CalorienderTests.xctest */,
+				F5A7297A22701AAC00DAC390 /* CalorienderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5A7295B22701AAA00DAC390 /* Caloriender */ = {
+			isa = PBXGroup;
+			children = (
+				F56CC0B0228117EC0003D7CD /* Extensions */,
+				F5A7295C22701AAA00DAC390 /* AppDelegate.swift */,
+				F5A7296222701AAA00DAC390 /* Main.storyboard */,
+				F5A7296522701AAC00DAC390 /* Assets.xcassets */,
+				F5A7296722701AAC00DAC390 /* LaunchScreen.storyboard */,
+				F5A7296A22701AAC00DAC390 /* Info.plist */,
+				F5A7298C22701B6E00DAC390 /* LoginViewController.swift */,
+				F5A7298E22701B8000DAC390 /* RegisterViewController.swift */,
+				F56CC0B722821B2C0003D7CD /* ProfileViewController.swift */,
+				F56CC0B9228224030003D7CD /* UserUpdateViewController.swift */,
+				F56CC0AE228114B90003D7CD /* Validation.swift */,
+				F56CC0B322813A1F0003D7CD /* Data.swift */,
+				F56CC0B52281460E0003D7CD /* MealsViewController.swift */,
+			);
+			path = Caloriender;
+			sourceTree = "<group>";
+		};
+		F5A7297222701AAC00DAC390 /* CalorienderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5A7297322701AAC00DAC390 /* CalorienderTests.swift */,
+				F5A7297522701AAC00DAC390 /* Info.plist */,
+			);
+			path = CalorienderTests;
+			sourceTree = "<group>";
+		};
+		F5A7297D22701AAC00DAC390 /* CalorienderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5A7297E22701AAC00DAC390 /* CalorienderUITests.swift */,
+				F5A7298022701AAC00DAC390 /* Info.plist */,
+			);
+			path = CalorienderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5A7295822701AAA00DAC390 /* Caloriender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5A7298322701AAC00DAC390 /* Build configuration list for PBXNativeTarget "Caloriender" */;
+			buildPhases = (
+				3078A9B56E3E767D3A02FCB3 /* [CP] Check Pods Manifest.lock */,
+				F5A7295522701AAA00DAC390 /* Sources */,
+				F5A7295622701AAA00DAC390 /* Frameworks */,
+				F5A7295722701AAA00DAC390 /* Resources */,
+				AFD5AAA74EFCAE14FAB9DCD5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Caloriender;
+			productName = Caloriender;
+			productReference = F5A7295922701AAA00DAC390 /* Caloriender.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5A7296E22701AAC00DAC390 /* CalorienderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5A7298622701AAC00DAC390 /* Build configuration list for PBXNativeTarget "CalorienderTests" */;
+			buildPhases = (
+				079A0DA101CB69190A310986 /* [CP] Check Pods Manifest.lock */,
+				F5A7296B22701AAC00DAC390 /* Sources */,
+				F5A7296C22701AAC00DAC390 /* Frameworks */,
+				F5A7296D22701AAC00DAC390 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5A7297122701AAC00DAC390 /* PBXTargetDependency */,
+			);
+			name = CalorienderTests;
+			productName = CalorienderTests;
+			productReference = F5A7296F22701AAC00DAC390 /* CalorienderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5A7297922701AAC00DAC390 /* CalorienderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5A7298922701AAC00DAC390 /* Build configuration list for PBXNativeTarget "CalorienderUITests" */;
+			buildPhases = (
+				63003C6B5941C2A9D836FEC1 /* [CP] Check Pods Manifest.lock */,
+				F5A7297622701AAC00DAC390 /* Sources */,
+				F5A7297722701AAC00DAC390 /* Frameworks */,
+				F5A7297822701AAC00DAC390 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5A7297C22701AAC00DAC390 /* PBXTargetDependency */,
+			);
+			name = CalorienderUITests;
+			productName = CalorienderUITests;
+			productReference = F5A7297A22701AAC00DAC390 /* CalorienderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5A7295122701AAA00DAC390 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Uğur Güçer";
+				TargetAttributes = {
+					F5A7295822701AAA00DAC390 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F5A7296E22701AAC00DAC390 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F5A7295822701AAA00DAC390;
+					};
+					F5A7297922701AAC00DAC390 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F5A7295822701AAA00DAC390;
+					};
+				};
+			};
+			buildConfigurationList = F5A7295422701AAA00DAC390 /* Build configuration list for PBXProject "Caloriender" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5A7295022701AAA00DAC390;
+			productRefGroup = F5A7295A22701AAA00DAC390 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5A7295822701AAA00DAC390 /* Caloriender */,
+				F5A7296E22701AAC00DAC390 /* CalorienderTests */,
+				F5A7297922701AAC00DAC390 /* CalorienderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5A7295722701AAA00DAC390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A7296922701AAC00DAC390 /* LaunchScreen.storyboard in Resources */,
+				F5A7296622701AAC00DAC390 /* Assets.xcassets in Resources */,
+				F5A7296422701AAA00DAC390 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A7296D22701AAC00DAC390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A7297822701AAC00DAC390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		079A0DA101CB69190A310986 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalorienderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3078A9B56E3E767D3A02FCB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Caloriender-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63003C6B5941C2A9D836FEC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalorienderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD5AAA74EFCAE14FAB9DCD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caloriender/Pods-Caloriender-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caloriender/Pods-Caloriender-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5A7295522701AAA00DAC390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A7298F22701B8000DAC390 /* RegisterViewController.swift in Sources */,
+				F5A7298D22701B6E00DAC390 /* LoginViewController.swift in Sources */,
+				F56CC0B2228118570003D7CD /* UITextFieldExtensions.swift in Sources */,
+				F56CC0B422813A1F0003D7CD /* Data.swift in Sources */,
+				F56CC0B62281460E0003D7CD /* MealsViewController.swift in Sources */,
+				F56CC0AF228114B90003D7CD /* Validation.swift in Sources */,
+				F56CC0B822821B2C0003D7CD /* ProfileViewController.swift in Sources */,
+				F5A7295D22701AAA00DAC390 /* AppDelegate.swift in Sources */,
+				F56CC0BA228224030003D7CD /* UserUpdateViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A7296B22701AAC00DAC390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A7297422701AAC00DAC390 /* CalorienderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A7297622701AAC00DAC390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A7297F22701AAC00DAC390 /* CalorienderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5A7297122701AAC00DAC390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5A7295822701AAA00DAC390 /* Caloriender */;
+			targetProxy = F5A7297022701AAC00DAC390 /* PBXContainerItemProxy */;
+		};
+		F5A7297C22701AAC00DAC390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5A7295822701AAA00DAC390 /* Caloriender */;
+			targetProxy = F5A7297B22701AAC00DAC390 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5A7296222701AAA00DAC390 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A7296322701AAA00DAC390 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5A7296722701AAC00DAC390 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A7296822701AAC00DAC390 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5A7298122701AAC00DAC390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5A7298222701AAC00DAC390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5A7298422701AAC00DAC390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEB60082386E6B2B0F6467E3 /* Pods-Caloriender.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Caloriender/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gucer.Caloriender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5A7298522701AAC00DAC390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 662BF5E10773E1AABC3235C5 /* Pods-Caloriender.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Caloriender/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gucer.Caloriender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5A7298722701AAC00DAC390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 633E4C91FC4D434A1AAFA0D9 /* Pods-CalorienderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CalorienderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gucer.CalorienderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caloriender.app/Caloriender";
+			};
+			name = Debug;
+		};
+		F5A7298822701AAC00DAC390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6384147A67F2E004A98B9B5 /* Pods-CalorienderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CalorienderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gucer.CalorienderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caloriender.app/Caloriender";
+			};
+			name = Release;
+		};
+		F5A7298A22701AAC00DAC390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F8A764FFCC56DFB0C12827 /* Pods-CalorienderUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CalorienderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gucer.CalorienderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Caloriender;
+			};
+			name = Debug;
+		};
+		F5A7298B22701AAC00DAC390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A41D8296C4E4A3C5E8C082 /* Pods-CalorienderUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CalorienderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gucer.CalorienderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Caloriender;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5A7295422701AAA00DAC390 /* Build configuration list for PBXProject "Caloriender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A7298122701AAC00DAC390 /* Debug */,
+				F5A7298222701AAC00DAC390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5A7298322701AAC00DAC390 /* Build configuration list for PBXNativeTarget "Caloriender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A7298422701AAC00DAC390 /* Debug */,
+				F5A7298522701AAC00DAC390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5A7298622701AAC00DAC390 /* Build configuration list for PBXNativeTarget "CalorienderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A7298722701AAC00DAC390 /* Debug */,
+				F5A7298822701AAC00DAC390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5A7298922701AAC00DAC390 /* Build configuration list for PBXNativeTarget "CalorienderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A7298A22701AAC00DAC390 /* Debug */,
+				F5A7298B22701AAC00DAC390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5A7295122701AAA00DAC390 /* Project object */;
+}
