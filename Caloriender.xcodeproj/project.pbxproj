@@ -10,10 +10,14 @@
 		8184BD28058E7BDC5839781E /* Pods_CalorienderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799EC2A236C0E35974D901C0 /* Pods_CalorienderUITests.framework */; };
 		83BCCC0960197B5C6AB05ABA /* Pods_Caloriender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2395CE8BBE9DD6C149EB6BA /* Pods_Caloriender.framework */; };
 		A39F63EEBF569200D062DC78 /* Pods_CalorienderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA710583EA9C8927136207E /* Pods_CalorienderTests.framework */; };
+		F54AD96022B6727C009F07A5 /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54AD95F22B6727C009F07A5 /* MealsTableViewController.swift */; };
+		F54AD96222B672BB009F07A5 /* MealTypesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54AD96122B672BB009F07A5 /* MealTypesTableViewCell.swift */; };
+		F54AD96422B69946009F07A5 /* MealSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54AD96322B69946009F07A5 /* MealSearchTableViewCell.swift */; };
+		F54AD96622B69971009F07A5 /* MealSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54AD96522B69971009F07A5 /* MealSearchTableViewController.swift */; };
+		F560423E22B6D4F8006E8856 /* MealDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F560423D22B6D4F8006E8856 /* MealDetailTableViewCell.swift */; };
 		F56CC0AF228114B90003D7CD /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CC0AE228114B90003D7CD /* Validation.swift */; };
 		F56CC0B2228118570003D7CD /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CC0B1228118570003D7CD /* UITextFieldExtensions.swift */; };
 		F56CC0B422813A1F0003D7CD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CC0B322813A1F0003D7CD /* Data.swift */; };
-		F56CC0B62281460E0003D7CD /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CC0B52281460E0003D7CD /* MealsViewController.swift */; };
 		F56CC0B822821B2C0003D7CD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CC0B722821B2C0003D7CD /* ProfileViewController.swift */; };
 		F56CC0BA228224030003D7CD /* UserUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CC0B9228224030003D7CD /* UserUpdateViewController.swift */; };
 		F5A7295D22701AAA00DAC390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A7295C22701AAA00DAC390 /* AppDelegate.swift */; };
@@ -24,6 +28,13 @@
 		F5A7297F22701AAC00DAC390 /* CalorienderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A7297E22701AAC00DAC390 /* CalorienderUITests.swift */; };
 		F5A7298D22701B6E00DAC390 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A7298C22701B6E00DAC390 /* LoginViewController.swift */; };
 		F5A7298F22701B8000DAC390 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A7298E22701B8000DAC390 /* RegisterViewController.swift */; };
+		F5A7EB2822B6FA1100921213 /* AddFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A7EB2722B6FA1100921213 /* AddFoodViewController.swift */; };
+		F5A7EB2C22B6FE5600921213 /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A7EB2B22B6FE5600921213 /* MealDetailViewController.swift */; };
+		F5F7E60E22B58C950070DAA5 /* BasalMetabolismViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F7E60D22B58C950070DAA5 /* BasalMetabolismViewController.swift */; };
+		F5F7E61022B597F40070DAA5 /* IdealWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F7E60F22B597F40070DAA5 /* IdealWeightViewController.swift */; };
+		F5F7E61222B5980E0070DAA5 /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F7E61122B5980E0070DAA5 /* BMIViewController.swift */; };
+		F5F7E61422B5ACCE0070DAA5 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F7E61322B5ACCE0070DAA5 /* SearchTableViewCell.swift */; };
+		F5F7E61622B5ADE30070DAA5 /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F7E61522B5ADE30070DAA5 /* SearchResultTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +63,14 @@
 		B9F8A764FFCC56DFB0C12827 /* Pods-CalorienderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorienderUITests.debug.xcconfig"; path = "Target Support Files/Pods-CalorienderUITests/Pods-CalorienderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DEB60082386E6B2B0F6467E3 /* Pods-Caloriender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caloriender.debug.xcconfig"; path = "Target Support Files/Pods-Caloriender/Pods-Caloriender.debug.xcconfig"; sourceTree = "<group>"; };
 		E2395CE8BBE9DD6C149EB6BA /* Pods_Caloriender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caloriender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54AD95F22B6727C009F07A5 /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
+		F54AD96122B672BB009F07A5 /* MealTypesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTypesTableViewCell.swift; sourceTree = "<group>"; };
+		F54AD96322B69946009F07A5 /* MealSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSearchTableViewCell.swift; sourceTree = "<group>"; };
+		F54AD96522B69971009F07A5 /* MealSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSearchTableViewController.swift; sourceTree = "<group>"; };
+		F560423D22B6D4F8006E8856 /* MealDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailTableViewCell.swift; sourceTree = "<group>"; };
 		F56CC0AE228114B90003D7CD /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		F56CC0B1228118570003D7CD /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 		F56CC0B322813A1F0003D7CD /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		F56CC0B52281460E0003D7CD /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
 		F56CC0B722821B2C0003D7CD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F56CC0B9228224030003D7CD /* UserUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdateViewController.swift; sourceTree = "<group>"; };
 		F5A7295922701AAA00DAC390 /* Caloriender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caloriender.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +87,13 @@
 		F5A7298022701AAC00DAC390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A7298C22701B6E00DAC390 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F5A7298E22701B8000DAC390 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F5A7EB2722B6FA1100921213 /* AddFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodViewController.swift; sourceTree = "<group>"; };
+		F5A7EB2B22B6FE5600921213 /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
+		F5F7E60D22B58C950070DAA5 /* BasalMetabolismViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasalMetabolismViewController.swift; sourceTree = "<group>"; };
+		F5F7E60F22B597F40070DAA5 /* IdealWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealWeightViewController.swift; sourceTree = "<group>"; };
+		F5F7E61122B5980E0070DAA5 /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
+		F5F7E61322B5ACCE0070DAA5 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		F5F7E61522B5ADE30070DAA5 /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
 		F6384147A67F2E004A98B9B5 /* Pods-CalorienderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorienderTests.release.xcconfig"; path = "Target Support Files/Pods-CalorienderTests/Pods-CalorienderTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,7 +193,18 @@
 				F56CC0B9228224030003D7CD /* UserUpdateViewController.swift */,
 				F56CC0AE228114B90003D7CD /* Validation.swift */,
 				F56CC0B322813A1F0003D7CD /* Data.swift */,
-				F56CC0B52281460E0003D7CD /* MealsViewController.swift */,
+				F5F7E61122B5980E0070DAA5 /* BMIViewController.swift */,
+				F5F7E60D22B58C950070DAA5 /* BasalMetabolismViewController.swift */,
+				F5F7E60F22B597F40070DAA5 /* IdealWeightViewController.swift */,
+				F5F7E61322B5ACCE0070DAA5 /* SearchTableViewCell.swift */,
+				F5F7E61522B5ADE30070DAA5 /* SearchResultTableViewController.swift */,
+				F54AD95F22B6727C009F07A5 /* MealsTableViewController.swift */,
+				F54AD96122B672BB009F07A5 /* MealTypesTableViewCell.swift */,
+				F54AD96322B69946009F07A5 /* MealSearchTableViewCell.swift */,
+				F54AD96522B69971009F07A5 /* MealSearchTableViewController.swift */,
+				F560423D22B6D4F8006E8856 /* MealDetailTableViewCell.swift */,
+				F5A7EB2722B6FA1100921213 /* AddFoodViewController.swift */,
+				F5A7EB2B22B6FE5600921213 /* MealDetailViewController.swift */,
 			);
 			path = Caloriender;
 			sourceTree = "<group>";
@@ -422,14 +455,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54AD96422B69946009F07A5 /* MealSearchTableViewCell.swift in Sources */,
 				F5A7298F22701B8000DAC390 /* RegisterViewController.swift in Sources */,
+				F54AD96622B69971009F07A5 /* MealSearchTableViewController.swift in Sources */,
+				F5F7E61222B5980E0070DAA5 /* BMIViewController.swift in Sources */,
 				F5A7298D22701B6E00DAC390 /* LoginViewController.swift in Sources */,
 				F56CC0B2228118570003D7CD /* UITextFieldExtensions.swift in Sources */,
+				F560423E22B6D4F8006E8856 /* MealDetailTableViewCell.swift in Sources */,
+				F5F7E60E22B58C950070DAA5 /* BasalMetabolismViewController.swift in Sources */,
+				F54AD96222B672BB009F07A5 /* MealTypesTableViewCell.swift in Sources */,
+				F54AD96022B6727C009F07A5 /* MealsTableViewController.swift in Sources */,
 				F56CC0B422813A1F0003D7CD /* Data.swift in Sources */,
-				F56CC0B62281460E0003D7CD /* MealsViewController.swift in Sources */,
+				F5F7E61622B5ADE30070DAA5 /* SearchResultTableViewController.swift in Sources */,
+				F5F7E61022B597F40070DAA5 /* IdealWeightViewController.swift in Sources */,
+				F5F7E61422B5ACCE0070DAA5 /* SearchTableViewCell.swift in Sources */,
 				F56CC0AF228114B90003D7CD /* Validation.swift in Sources */,
 				F56CC0B822821B2C0003D7CD /* ProfileViewController.swift in Sources */,
 				F5A7295D22701AAA00DAC390 /* AppDelegate.swift in Sources */,
+				F5A7EB2822B6FA1100921213 /* AddFoodViewController.swift in Sources */,
+				F5A7EB2C22B6FE5600921213 /* MealDetailViewController.swift in Sources */,
 				F56CC0BA228224030003D7CD /* UserUpdateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

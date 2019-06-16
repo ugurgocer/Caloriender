@@ -27,6 +27,7 @@ enum ValidationType{
     case weight
     case age
     case password
+    case calories
 }
 
 protocol ValidationConvertible {
@@ -43,6 +44,7 @@ enum ValidationFactory {
         case .weight: return WeightValidator()
         case .age: return AgeValidator()
         case .password: return PasswordValidator()
+        case .calories: return CalorieValidator()
         }
     }
 }
@@ -82,6 +84,14 @@ struct HeightValidator: ValidationConvertible {
     func validate(_ value: String) throws -> String {
         guard let heightvalue = Int(value) else {throw ValidationError("Boy alanı nümerik olmalı")}
         guard heightvalue > 99 && heightvalue < 251 else { throw ValidationError("Boy değeri 100 ve 250 değer aralığında olmalıdır.")}
+        
+        return value
+    }
+}
+
+struct CalorieValidator: ValidationConvertible {
+    func validate(_ value: String) throws -> String {
+        guard let calorievalue = Int(value) else {throw ValidationError("Boy alanı nümerik olmalı")}
         
         return value
     }

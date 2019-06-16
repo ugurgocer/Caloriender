@@ -18,16 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appicon" translatesAutoresizingMaskIntoConstraints="NO" id="DsK-aO-zVT">
-                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appicon" translatesAutoresizingMaskIntoConstraints="NO" id="DsK-aO-zVT">
+                                <rect key="frame" x="37" y="129" width="341.5" height="341.5"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALORIENDER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmJ-UL-hf7">
+                                <rect key="frame" x="37" y="536" width="342" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="342" id="IZB-g9-XyH"/>
+                                    <constraint firstAttribute="height" constant="52" id="YJ5-RU-zM3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                <color key="textColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.38016271591186523" green="0.77010470628738403" blue="0.57887911796569824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DsK-aO-zVT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iBF-o4-Dpx"/>
-                            <constraint firstItem="DsK-aO-zVT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ob3-Kp-nL6"/>
-                            <constraint firstItem="DsK-aO-zVT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="284" id="pp9-xh-jlS"/>
-                            <constraint firstItem="DsK-aO-zVT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="u4V-td-IXE"/>
+                            <constraint firstItem="DsK-aO-zVT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="3SR-Jp-uGV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DsK-aO-zVT" secondAttribute="trailing" constant="35.5" id="9PA-Ak-UXk"/>
+                            <constraint firstItem="dmJ-UL-hf7" firstAttribute="top" secondItem="DsK-aO-zVT" secondAttribute="bottom" constant="65.5" id="FPo-7I-PoF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dmJ-UL-hf7" secondAttribute="trailing" constant="35" id="IfM-Je-pXg"/>
+                            <constraint firstItem="dmJ-UL-hf7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="fNR-73-ttj"/>
+                            <constraint firstItem="DsK-aO-zVT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="vHZ-Xt-6X4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -62,10 +62,8 @@ class RegisterViewController: UIViewController{
                     let json = JSON(value)
                     if json["success"].boolValue {
                         let result = JSON(json["result"].dictionaryValue)
-                        let df = DateFormatter()
-                        df.dateFormat = "yyyy-MM-dd HH:mm:ss"
                         
-                        let data = LoginInfo(token: result["token"].stringValue, expiry_date: df.date(from: result["expiry_date"].stringValue)!, user_id: result["user_id"].intValue)
+                        let data = LoginInfo(token: result["token"].stringValue, expiry_date: result["expiry_date"].stringValue, user_id: result["user_id"].intValue)
                         
                         UserDefaults.standard.set(data.token, forKey: "token")
                         UserDefaults.standard.set(data.user_id, forKey: "user_id")

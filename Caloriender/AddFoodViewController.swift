@@ -1,8 +1,8 @@
 //
-//  LoginViewController.swift
+//  LaunchScreenViewController.swift
 //  Caloriender
 //
-//  Created by Uğur Güçer on 24.04.2019.
+//  Created by Uğur Güçer on 17.06.2019.
 //  Copyright © 2019 Uğur Güçer. All rights reserved.
 //
 
@@ -10,52 +10,36 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class LoginViewController: UIViewController {
-    
-    //MARK: - Outlets
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+class AddFoodViewController: UIViewController {
+
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var calory: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let token:String = UserDefaults.standard.string(forKey: "token") ?? ""
-        if(token.count == 32){
-            let homepage = self.storyboard?.instantiateViewController(withIdentifier: "HomePage")
-            self.show(homepage!, sender: nil)
-        }
-    }
-    
-    
-    @IBAction func login(_ sender: Any) {
+    @IBAction func addFood(_ sender: Any) {
         do{
-            let pass = try passwordTextField.validateText(validationType: .password)
-            let username = try usernameTextField.validateText(validationType: .username)
+            let nameText = try name.validateText(validationType: .nameOrSurname)
+            let calories = try calory.validateText(validationType: .calories)
             
             let parameters: Parameters = [
-                "password": pass,
-                "username": username
+                "yiyecek": nameText,
+                "kalori": calories
             ]
             
-            AF.request("http://diyet.atwebpages.com/giris", method: .post, parameters: parameters).validate().responseJSON { response in
+            let token = UserDefaults.standard.string(forKey: "token")!
+            AF.request("http://diyet.atwebpages.com/food/create/"+token, method: .post, parameters: parameters).validate().responseJSON { response in
                 switch response.result {
                 case .success(let value):
                     let json = JSON(value)
                     if json["success"].boolValue {
-                        let result = JSON(json["result"].dictionaryValue)
-                        
-                        let data = LoginInfo(token: result["token"].stringValue, expiry_date: result["expiry_date"].stringValue, user_id: result["user_id"].intValue)
-                        
-                        UserDefaults.standard.set(data.token, forKey: "token")
-                        UserDefaults.standard.set(data.user_id, forKey: "user_id")
-                        UserDefaults.standard.set(data.expiry_date, forKey: "expiry_date")
-                        
-                        let homepage = self.storyboard?.instantiateViewController(withIdentifier: "HomePage")
-                        self.show(homepage!, sender: nil)
+                        let alertController = UIAlertController(title: nil, message: json["message"].stringValue, preferredStyle: UIAlertController.Style.alert)
+                        let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                        alertController.addAction(alertAction)
+                        self.present(alertController, animated: true, completion: nil)
                     } else {
                         let alertController = UIAlertController(title: nil, message: json["error"].stringValue, preferredStyle: UIAlertController.Style.alert)
                         let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)

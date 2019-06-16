@@ -10,6 +10,18 @@ import Foundation
 
 struct LoginInfo {
     var token: String
-    var expiry_date: Date
+    var expiry_date: String
     var user_id: Int
+}
+
+struct ProfileInfo {
+    var username: String
+    var name: String
+    var surname: String
+    var height: Int
+    var weight: Int
+    var targetWeight: Int
+    var age: Int
+    var gender: Int
+    var email: String
 }
